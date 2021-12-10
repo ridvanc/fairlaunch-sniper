@@ -4,6 +4,10 @@
 
 BETA. NOT FULLY TESTED.
 
+This bot snipes fairlaunch tokens, where you know the contract address ahead of time and are waiting for liqudity to be added.
+
+With all of my bots you can find pre-compiled binaries in the dist folder. You should be able to run this bot anywhere (even mobile) without worrying about other dependencies.
+
 # GENERAL SETTINGS:
 
 `PRIVATE_KEY`: The private key is self explanatory. No one will **ever** ask for it. Don't **share** it.
