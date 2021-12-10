@@ -1,6 +1,6 @@
-# Welcome to Dr. Furr's Sniper Bot. Join the community: https://t.me/drfurrbots.
+## Welcome to Dr. Furr's Sniper Bot. Join the community: https://t.me/drfurrbots.
 
-# All the variables possible values are explained below, PLEASE SET THE CORRECT VALUES OR ELSE THE BOT WON'T WORK. 
+### All the variables possible values are explained below, PLEASE SET THE CORRECT VALUES OR ELSE THE BOT WON'T WORK. 
 
 BETA. NOT FULLY TESTED.
 
@@ -8,7 +8,7 @@ This bot snipes fairlaunch tokens, where you know the contract address ahead of 
 
 With all of my bots you can find pre-compiled binaries in the dist folder. You should be able to run this bot anywhere (even mobile) without worrying about other dependencies.
 
-# GENERAL SETTINGS:
+### GENERAL SETTINGS:
 
 `PRIVATE_KEY`: The private key is self explanatory. No one will **ever** ask for it. Don't **share** it.
 
