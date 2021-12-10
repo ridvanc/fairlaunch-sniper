@@ -19,7 +19,7 @@ const buyToken = async (token, purchaseAmount, gasLimit, gasPrice, myAddress, ro
     }
     const tx = await retry(
         async () => {
-            spinner = ora(`Buying ${token}`).start();
+            console.log(`Buying ${token}`)
             const amountOutMin = 0;
             let buyConfirmation = await router.swapExactETHForTokens(
                 amountOutMin,
@@ -39,16 +39,16 @@ const buyToken = async (token, purchaseAmount, gasLimit, gasPrice, myAddress, ro
             minTimeout: buySettings.retryMinTimeout,
             maxTimeout: buySettings.retryMaxTimeout,
             onRetry: (err, number) => {
-                spinner.warn("Buy Failed - Retrying", number);
+                console.log("Buy Failed - Retrying", number);
                 console.log("Error", err.reason);
                 if (number === buySettings.buyRetries) {
-                    spinner.fail("Sniping has failed...");
+                    console.log("Sniping has failed...");
                     console.log("")
                 }
             },
         }
     );
-    spinner.succeed(`Bought ${token}!`);
+    console.log(`Bought ${token}!`);
     console.log("  Transaction receipt: https://www.bscscan.com/tx/" + tx.hash);
     console.log("  Poocoin chart: https://poocoin.app/tokens/" + token);
 
