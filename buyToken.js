@@ -10,7 +10,7 @@ const buySettings = {
     deadline: 60,
 };
 
-const buyToken = async (token, purchaseAmount, gasLimit, gasPrice, myAddress, router) => {
+async function buyToken (token, purchaseAmount, gasLimit, gasPrice, myAddress, router) {
     const buyPair = {
         pair: [
             "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
